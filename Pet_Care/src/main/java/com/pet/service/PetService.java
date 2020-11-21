@@ -15,6 +15,8 @@ public interface PetService {
     List<Pet> getAllPets();
     List<Pet> getPetbyBreed(String author) throws PetNotFoundException;
     List<Pet> getPetbyCategory(String category)throws PetNotFoundException;
+    List<Pet> findPetByPetCategoryAndPetBreed(String petCategory, String petBreed)throws PetNotFoundException;
+	List<Pet> findPetByPetBreedAndPetCost(String petBreed, Integer petCost)throws PetNotFoundException;
     
 	
 }
