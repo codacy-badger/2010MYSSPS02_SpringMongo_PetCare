@@ -67,6 +67,27 @@ public class PetServiceImplementation implements PetService{
 		 }
 		 return petList;
 	}
+	
+	@Override
+	public List<Pet> findPetByPetCategoryAndPetBreed(String petCategory, String petBreed) {
+		// TODO Auto-generated method stub
+		List<Pet> petList= petRepository.findPetByPetCategoryAndPetBreed(petCategory, petBreed);
+		if(petList.isEmpty()) {
+			 throw new PetNotFoundException("pet with Category is not available");
+		 }
+		 return petList;
+	}
+
+	@Override
+	public List<Pet> findPetByPetBreedAndPetCost(String petBreed, Integer petCost) {
+		// TODO Auto-generated method stub
+		List<Pet> petList= petRepository.findPetByPetBreedAndPetCost(petBreed, petCost);
+		if(petList.isEmpty()) {
+			 throw new PetNotFoundException("pet with Category is not available");
+		 }
+		 return petList;
+		
+	}
 
 	
 	
