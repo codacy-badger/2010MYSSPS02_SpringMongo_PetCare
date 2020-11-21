@@ -2,7 +2,7 @@
 Spring Project on Pet care
 
 Tools:
-1.MongoDB
-2.Java
-3.Postman collaboration platform
+-MongoDB
+-Java
+-Postman collaboration platform
 
